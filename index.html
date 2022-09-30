@@ -54,6 +54,17 @@
 		<p>All talks are at 12 noon Eastern Time.</p>
 		<ul>
 			<li>30-Sep-2022: <a href="https://zollhoefer.com/" target="_blank">Michael Zollhoefer</a> [<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NWtrNzZqcXM4Z2J2NGhoM2h2b2NyYmp1c2ogc3JpbmF0aF9zcmlkaGFyQGJyb3duLmVkdQ&tmsrc=srinath_sridhar%40brown.edu" target="_blank">Add Event to Calendar</a>]</li>
+			<span id="moreDetails">
+			<b>Complete Codec Telepresence</b>
+			<p>
+			Imagine two people, each of them within their own home, being able to communicate and interact virtually with each other as if they are both present in the same shared physical space. Enabling such an experience, i.e., building a telepresence system that is indistinguishable from reality, is one of the goals of Reality Labs Research (RLR) in Pittsburgh. To this end, we develop key technology that combines fundamental computer vision, machine learning, and graphics techniques based on a novel neural reconstruction and rendering paradigm. In this talk, I will cover our advances towards a neural rendering approach for complete codec telepresence that includes metric avatars, binaural audio, photorealistic spaces, as well as their interactions in terms of light and sound transport. In the future, this approach will bring the world closer together by enabling anybody to communicate and interact with anyone, anywhere, at any time, as if everyone were sharing the same physical space.
+			</p>
+			
+			<b>Bio</b>
+			<p>Michael Zollhoefer is a Research Scientist at Meta Reality Labs Research (RLR) in Pittsburgh leading the Completeness Group. His north star is fully immersive remote communication and interaction in the virtual world at a level that is indistinguishable from reality. To this end, he develops key technology that combines fundamental computer vision, machine learning, and graphics research based on a novel neural reconstruction and rendering paradigm. Before joining RLR, Michael was a Visiting Assistant Professor at Stanford University and a Postdoctoral Researcher at the Max Planck Institute for Informatics. He received his PhD from the University of Erlangen-Nuremberg for his work on real-time reconstruction of static and dynamic scenes.</p>
+			</span>
+			<div onclick="toggleDetails()" id="moreDetailsBtn" class="showBtn"><a class="empty">+ Show details...</a></div>
+			<div onclick="toggleDetails()" id="lessDetailsBtn" class="showBtn"><a class="empty">- Less details...</a></div>
 <li>7-Oct-2022: James Landay</li>
 <li>14-Oct-2022: Yin Li</li>
 <li>11-Nov-2022: Derek Liu</li>
@@ -85,6 +96,24 @@
 		
 		<!-- Little bit of space -->
 		<p></p>
+		
+			<script>
+            function toggleDetails() {
+              var moreDetails = document.getElementById("moreDetails");
+              var moreDetailsBtn = document.getElementById("moreDetailsBtn");
+              var lessDetailsBtn = document.getElementById("lessDetailsBtn");
+              if (moreDetailsBtn.style.display === "none") {
+                moreDetails.style.display = "none";
+                moreDetailsBtn.style.display = "inline";
+                lessDetailsBtn.style.display = "none";
+              } else {
+                moreDetails.style.display = "inline";
+                moreDetailsBtn.style.display = "none";
+                lessDetailsBtn.style.display = "inline";
+              }
+            }
+	</script>
+
 		
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-SSQESWNE32"></script>

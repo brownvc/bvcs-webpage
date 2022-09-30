@@ -12,7 +12,7 @@
 
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 1.25em;
     line-height: 1.4;
 }
 
@@ -278,3 +278,19 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+#moreDetails {
+    display: none;
+}
+
+#lessDetails {
+    display: none;
+}
+
+
+.showBtn a {
+    color: #003373;
+    cursor: pointer;
+}
+
+a.empty { color: #820000; text-decoration: none; }
