@@ -107,13 +107,10 @@
 <script>
   const csvBaseUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ7vHVsAqORSc-micw2en8uc8SQffDPwxrWSPTyloE0cMj7vD5gcRlTOAgGFewzcZO8klHevQTnhQN/pub?output=csv&sheet='; // <-- your sheet publish URL prefix
 
-  // Ordered terms for sorting
-  const termOrder = { Spring: 1, Fall: 2 };
-
   // List of all known sheet names
   const sheetNames = [
     "2025 Spring",
-    "2024 Fall",
+    // "2024 Fall",
     // Add more here or fetch programmatically if you're exporting a full index
   ];
 
@@ -121,17 +118,6 @@
     const match = name.match(/(\d{4})\s+(Spring|Fall)/);
     if (!match) return null;
     return { year: parseInt(match[1]), term: match[2] };
-  }
-
-  function sortSheetsChronologically(names) {
-    return names
-      .map(name => ({ name, ...parseSheetLabel(name) }))
-      .filter(info => info.year && info.term)
-      .sort((a, b) => {
-        if (a.year !== b.year) return b.year - a.year;
-        return termOrder[b.term] - termOrder[a.term];
-      })
-      .map(info => info.name);
   }
 
   function renderSheet(title, data, container) {
@@ -212,10 +198,9 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const sortedSheetNames = sortSheetsChronologically(sheetNames);
     const container = document.getElementById('speakers_table_container');
 
-    sortedSheetNames.forEach(sheetName => {
+    sheetNames.forEach(sheetName => {
       const sheetUrl = csvBaseUrl + encodeURIComponent(sheetName);
       Papa.parse(sheetUrl, {
         download: true,
