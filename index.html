@@ -23,7 +23,7 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-    
+	<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
     <link rel="icon" type="image/png" href="logos/BVC_logo.png">
     <title>Brown Visual Computing Seminar</title>
     <meta property='og:title' content='Brown Visual Computing Seminar'/>
@@ -41,218 +41,18 @@
         Fridays, 12 noon ET<br/>
 		<!-- Add to calendar-->
 		</p>
-		
+		<div style="text-align: center; width: 100%;">
 		<p>
-			<a href="Final_V1.jpeg" target="_blank"><img src="Final_V1.jpeg" class="teaser-image" width="640px"></a>
+			<a href="images/spring_2025.png" target="_blank"><img src="images/spring_2025.png" class="teaser-image" width="100%"></a>
 		</p>
+		</div>
 
 		<p>The Brown Visual Computing Seminar is a series of talks organized by the <a href="https://visual.cs.brown.edu/" target="_blank">Visual Computing Group</a> at Brown University. The seminar will have talks by experts on topics such as computer vision, computer graphics, HCI, animation, visualization, artificial intelligence, and machine learning. It will be held on select Fridays each semester at 12 noon Eastern Time.</p>
 			<p>Most talks will be made available live via Zoom Webinar, and recorded via YouTube. Please click on the link next to the speaker to add to your calendar.
 		</p>
-		<h2>Fall 2022 Speakers</h2>
-		<p>All talks are at 12 noon Eastern Time.</p>
 		<div class="container">
-			<table id="speakers_table">				
-				<tbody>
-					<tr>
-						<th>Date</th>
-						<th>Speaker</th>
-						<th>Affiliation</th>
-						<th>Title</th>
-						<th>Location</th>
-						<th>Calendar</th>
-					</tr>					
-					<tr>
-						<td>30-Sep-2022</td>
-						<td><a href="https://zollhoefer.com/" target="_blank">Michael Zollhoefer</a></td>
-						<td>Meta Reality Labs Research (RLR)</td>
-						<td>Complete Codec Telepresence
-							<div onclick="toggleDetails(1)" id="moreDetailsBtn_1" class="showBtn">
-								<a id="showDetails_1">+ Show details</a>
-								<a id="hideDetails_1" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="" target="_blank">Recording Coming Soon</a></td>
-						<td></td>
-					</tr>	
-					<tr id="rowDetails_1" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">Complete Codec Telepresence</p>
-							<p>
-							Imagine two people, each of them within their own home, being able to communicate and interact virtually with each other as if they are both present in the same shared physical space. Enabling such an experience, i.e., building a telepresence system that is indistinguishable from reality, is one of the goals of Reality Labs Research (RLR) in Pittsburgh. To this end, we develop key technology that combines fundamental computer vision, machine learning, and graphics techniques based on a novel neural reconstruction and rendering paradigm. In this talk, I will cover our advances towards a neural rendering approach for complete codec telepresence that includes metric avatars, binaural audio, photorealistic spaces, as well as their interactions in terms of light and sound transport. In the future, this approach will bring the world closer together by enabling anybody to communicate and interact with anyone, anywhere, at any time, as if everyone were sharing the same physical space.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>Michael Zollhoefer is a Research Scientist at Meta Reality Labs Research (RLR) in Pittsburgh leading the Completeness Group. His north star is fully immersive remote communication and interaction in the virtual world at a level that is indistinguishable from reality. To this end, he develops key technology that combines fundamental computer vision, machine learning, and graphics research based on a novel neural reconstruction and rendering paradigm. Before joining RLR, Michael was a Visiting Assistant Professor at Stanford University and a Postdoctoral Researcher at the Max Planck Institute for Informatics. He received his PhD from the University of Erlangen-Nuremberg for his work on real-time reconstruction of static and dynamic scenes.</p>
-						</td>
-					</tr>					
-					<tr>
-						<td>7-Oct-2022</td>
-						<td><a href="https://www.landay.org/" target="_blank">James Landay</a></td>
-						<td>Stanford University</td>
-						<td>“AI For Good” Isn’t Good Enough: A Call for Human-Centered AI
-							<div onclick="toggleDetails(2)" id="moreDetailsBtn_2" class="showBtn">
-								<a id="showDetails_2">+ Show details</a>
-								<a id="hideDetails_2" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="https://brown.zoom.us/j/97233372116" target="_blank">Zoom</a></td>
-						<td><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MGQ2Nm5saTA2aWF0YjgzdDkxb3BhYzMzMWsgY181ZDZkOWJmZWMyOGZlYTgzZDJlMmNkODQ2MTY5MmRjOTY4ZDAxNTNlN2QxNjQ2MGRiNTlhNjRhNDg3NWM0ZTk5QGc&tmsrc=c_5d6d9bfec28fea83d2e2cd8461692dc968d0153e7d16460db59a64a4875c4e99%40group.calendar.google.com" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_2" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">“AI For Good” Isn’t Good Enough: A Call for Human-Centered AI</p>
-							<p>
-								The growing awareness of the pervasiveness of AI’s impact on humans and societies has led to a proliferation of “AI for Good” initiatives. I argue that simply recognizing the potential impacts of AI systems is only table stakes for developing and guiding societally positive AI. Blindly applying AI techniques to a problem in an important societal area, such as healthcare, often leads to solving the wrong problem. In this talk, I will advance the idea that to be truly Human-Centered, the development of AI must change in three ways: it must be user-centered, community-centered, and societally-centered. First, user-centered design integrates well-known techniques to account for the needs and abilities of a system’s end users while rapidly improving a design through rigorous iterative user testing. Combined with creative new ideas and technologies, user-centered design helps move from designing systems that try to replicate humans to AI systems that work for humans. Second, AI systems also have impacts on communities beyond the direct users—Human-Centered AI must be community-centered and engage communities, e.g., with participatory techniques, at the earliest stages of design. Third, these impacts can reverberate at a societal level, requiring forecasting and mediating potential impacts throughout a project as well. To accomplish these three changes, successful Human-Centered AI requires the early engagement of multidisciplinary teams beyond technologists, including experts in design, the social sciences and humanities, and domains of interest such as medicine or law. In this talk I will elaborate on my argument for an authentic Human-Centered AI by showing both negative and positive examples. I will also illustrate how my own group’s research in health, wellness, and behavior change is both living up to and failing in meeting the needs of a Human-Centered AI design process.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								James Landay is a Professor of Computer Science and the Anand Rajaraman and Venky Harinarayan Professor in the School of Engineering at Stanford University. He specializes in human-computer interaction. Landay is the co-founder and Associate Director of the Stanford Institute for Human-centered Artificial Intelligence (HAI). Prior to joining Stanford, Landay was a Professor of Information Science at Cornell Tech in New York City for one year and a Professor of Computer Science & Engineering at the University of Washington for 10 years. From 2003-2006, he also served as the Director of Intel Labs Seattle, a leading research lab that explored various aspects of ubiquitous computing. Landay was also the chief scientist and co-founder of NetRaker, which was acquired by KeyNote Systems in 2004. Before that he was an Associate Professor of Computer Science at UC Berkeley. Landay received his BS in EECS from UC Berkeley in 1990, and MS and PhD in Computer Science from Carnegie Mellon University in 1993 and 1996, respectively. His PhD dissertation was the first to demonstrate the use of sketching in user interface design tools. He is a member of the ACM SIGCHI Academy and an ACM Fellow. He served for six years on the NSF CISE Advisory Committee.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>14-Oct-2022</td>
-						<td><a href="https://www.biostat.wisc.edu/~yli/" target="_blank">Yin Li</a></td>
-						<td>UW Madison</td>
-						<td>Learning Visual Knowledge from Paired Image-Text Data
-							<div onclick="toggleDetails(3)" id="moreDetailsBtn_3" class="showBtn">
-								<a id="showDetails_3">+ Show details</a>
-								<a id="hideDetails_3" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="https://brown.zoom.us/j/97233372116" target="_blank">Zoom</a></td>
-						<td><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ltaGhlbGtkYWtsa2V1bmE1cjVuaWFtMWkgY181ZDZkOWJmZWMyOGZlYTgzZDJlMmNkODQ2MTY5MmRjOTY4ZDAxNTNlN2QxNjQ2MGRiNTlhNjRhNDg3NWM0ZTk5QGc&tmsrc=c_5d6d9bfec28fea83d2e2cd8461692dc968d0153e7d16460db59a64a4875c4e99%40group.calendar.google.com" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_3" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">Learning Visual Knowledge from Paired Image-Text Data</p>
-							<p>
-								Images and their text descriptions (e.g., captions) are readily available in great abundance over the Internet, creating a unique opportunity and a recent surge of interest to develop deep models for image understanding. An image contains millions of pixels capturing the intensity and color of a visual scene. Yet the same scene can be oftentimes summarized using dozens of words. How can we bridge the gap between visual and text data? What can we learn from these image-text pairs? In this talk, I will describe our recent work to address these research questions, with a focus on learning visual knowledge from images and their captions.
-
-								First, I will talk about our work on vision-language representation learning for matching images and sentences, and for aligning image regions with text tokens. Our latest development demonstrates that region representations can be learned from images and their captions, and enable zero-shot and open-vocabulary object detection. Moving forward, I will present our work on learning from image-text pairs to detect image scene graphs -- a graphical representation that captures localized visual concepts (e.g., object names) and their relationships (e.g., predicates). I will further describe how these scene graphs can be used to reason about different scene components within an image. Lastly, I will discuss the limitations of existing vision-language models learned by passively observing image-text data, and briefly introduce our ongoing effort of active learning from first person visual experience.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								Yin Li is an Assistant Professor in the Department of Biostatistics and Medical Informatics and affiliate faculty in the Department of Computer Sciences at the University of Wisconsin-Madison. Previously, he obtained his PhD in computer science from Georgia Tech and was a postdoctoral fellow in the Robotics Institute at Carnegie Mellon University. His primary research focus is computer vision. He is also interested in the applications of vision and learning in healthcare. He has been serving as area chairs for the top vision and AI conferences, including CVPR, ICCV, ECCV and IJCAI. He was the co-recipient of the best student paper awards at MobiHealth 2014 and IEEE Face and Gesture 2015, and the best demo nominee at ECCV 2020. His work was covered by MIT Tech Review, WIRED UK, New Scientist, BBC, and Forbes.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>11-Nov-2022</td>
-						<td><a href="https://www.dgp.toronto.edu/~hsuehtil/" target="_blank">Derek Liu</a></td>
-						<td>U Toronto / Roblox Research</td>
-						<td>Generative Models for Stylized Geometry
-							<div onclick="toggleDetails(4)" id="moreDetailsBtn_4" class="showBtn">
-								<a id="showDetails_4">+ Show details</a>
-								<a id="hideDetails_4" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="https://brown.zoom.us/j/95422192763" target="_blank">Zoom</a></td>
-						<td><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ltaGhlbGtkYWtsa2V1bmE1cjVuaWFtMWkgY181ZDZkOWJmZWMyOGZlYTgzZDJlMmNkODQ2MTY5MmRjOTY4ZDAxNTNlN2QxNjQ2MGRiNTlhNjRhNDg3NWM0ZTk5QGc&tmsrc=c_5d6d9bfec28fea83d2e2cd8461692dc968d0153e7d16460db59a64a4875c4e99%40group.calendar.google.com" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_4" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">Generative Models for Stylized Geometry</p>
-							<p>
-								Recent advances in stylizing 2D digital content have sparked a plethora of image stylization and non-photorealistic rendering technologies. However, how to generate stylized 3D geometry remains a challenging problem. One major reason is the lack of suitable "languages" for computers to understand the style of 3D objects. In this talk, I will cover three perspectives for capturing geometric styles, including rendering, machine-learned geometric prior, and surface normals. I will demonstrate how these perspectives can enable computers to generate stylized 3D content. I argue that exploring fundamental style elements for geometry would unlock the door to learning-based and optimization-based techniques for geometric stylization.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								Hsueh-Ti Derek Liu is a Research Scientist at Roblox working on digital geometry processing and 3D machine learning. Derek's work focuses on developing easy-to-use 3D modeling tools and numerical methods for processing geometric data at scale. He obtained his PhD at the University of Toronto advised by Prof. Alec Jacobson. He worked as a visiting scholar at École Polytechnique in 2019, working with Prof. Maks Ovsjanikov. He completed his M.S. with Profs. Keenan Crane and Levent Burak Kara at Carnegie Mellon University.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>18-Nov-2022</td>
-						<td><a href="http://people.csail.mit.edu/leake/" target="_blank">Mackenzie Leake</a></td>
-						<td>MIT</td>
-						<td>Integrating expertise into computational tools for design and media authoring
-							<div onclick="toggleDetails(5)" id="moreDetailsBtn_5" class="showBtn">
-								<a id="showDetails_5">+ Show details</a>
-								<a id="hideDetails_5" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="https://brown.zoom.us/j/95422192763" target="_blank">Zoom</a></td>
-						<td><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ltaGhlbGtkYWtsa2V1bmE1cjVuaWFtMWkgY181ZDZkOWJmZWMyOGZlYTgzZDJlMmNkODQ2MTY5MmRjOTY4ZDAxNTNlN2QxNjQ2MGRiNTlhNjRhNDg3NWM0ZTk5QGc&tmsrc=c_5d6d9bfec28fea83d2e2cd8461692dc968d0153e7d16460db59a64a4875c4e99%40group.calendar.google.com" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_5" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">Integrating expertise into computational tools for design and media authoring</p>
-							<p>
-								Deciding on a computational representation for a problem allows us to map high level objectives to low level details and select the appropriate set of algorithmic tools. However, deciding on a good representation is not always straightforward. For example, domains with a history of representing a problem in a specific way can limit our imagination of new and useful ways of framing the problem. On the other end of the spectrum, domains without much existing computational support require identifying the structure of the problem and building up a representation from scratch. In this talk I will discuss my work on building design and media authoring tools based on representations that align with experts’ goals. I will describe how developing a strong understanding of the application domain helps us to offload the tedious steps of a process to computation and guide users’ attention toward the more creative, open-ended decisions.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								Mackenzie Leake is a METEOR postdoctoral fellow at MIT CSAIL. She received her PhD and MS in computer science from Stanford University and a BA in computational science and studio art from Scripps College. Her research focuses on designing computational tools for various creative domains, including textiles and video. Her research has been supported by Adobe Research, Brown Institute for Media Innovation, and Stanford Enhancing Diversity in Graduate Education (EDGE) fellowships. In 2022 she was named a Rising Star in EECS and a WiGraph Rising Star in Computer Graphics.
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>2-Dec-2022</td>
-						<td><a href="" target="_blank">Andrea Tagliasacchi</a></td>
-						<td>Simon Fraser / Google</td>
-						<td>TBA
-							<div onclick="toggleDetails(6)" id="moreDetailsBtn_6" class="showBtn">
-								<a id="showDetails_6">+ Show details</a>
-								<a id="hideDetails_6" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="" target="_blank">Zoom</a></td>
-						<td><a href="" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_6" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">TITLE</p>
-							<p>
-								TBA
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								TBA
-							</p>
-						</td>
-					</tr>
-					<tr>
-						<td>9-Dec-2022</td>
-						<td><a href="" target="_blank">Pat Hanrahan</a></td>
-						<td>Stanford</td>
-						<td>Shading Languages and the Emergence of Programmable Graphics Systems
-							<div onclick="toggleDetails(7)" id="moreDetailsBtn_7" class="showBtn">
-								<a id="showDetails_7">+ Show details</a>
-								<a id="hideDetails_7" style="display:none;">- Hide details</a>								
-							</div>
-						</td>
-						<td><a href="https://brown.zoom.us/j/95422192763" target="_blank">Zoom</a></td>
-						<td><a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M2ltaGhlbGtkYWtsa2V1bmE1cjVuaWFtMWkgY181ZDZkOWJmZWMyOGZlYTgzZDJlMmNkODQ2MTY5MmRjOTY4ZDAxNTNlN2QxNjQ2MGRiNTlhNjRhNDg3NWM0ZTk5QGc&tmsrc=c_5d6d9bfec28fea83d2e2cd8461692dc968d0153e7d16460db59a64a4875c4e99%40group.calendar.google.com" target="_blank">Add to calendar</a></td>
-					</tr>	
-					<tr id="rowDetails_7" style="display:none;">
-						<td colspan="6">
-							<p style="font-size: 20px;">Shading Languages and the Emergence of Programmable Graphics Systems</p>
-							<p>
-								A major challenge in using computer graphics for movies and games is to create a rendering system that can create realistic pictures of a virtual world. The system must handle the variety and complexity of the shapes, materials, and lighting that combine to create what we see every day. The images must also be free of artifacts, emulate cameras to create depth of field and motion blur, and compose seamlessly with photographs of live action.
-
-								Pixar's RenderMan was created for this purpose, and has been widely used in feature film production. A key innovation in the system is to use a shading language to procedurally describe appearance. Shading languages were subsequently extended to run in real-time on graphics processing units (GPUs), and now shading languages are widely used in game engines. The final step was the realization that the GPU is a data-parallel computer, and the the shading language could be extended into a general-purpose data-parallel programming language. This enabled a wide variety of applications in high performance computing, such as physical simulation and machine learning, to be run on GPUs. Nowadays, GPUs are the fastest computers in the world. This talk will review the history of shading languages and GPUs, and discuss the broader implications for computing.
-							</p>
-							
-							<p style="font-size: 20px;">Bio</p>
-							<p>
-								Pat Hanrahan is the Canon Professor of Computer Science and Electrical
-								Engineering in the Computer Graphics Laboratory at Stanford University.
-								His research focuses on rendering algorithms, graphics systems, and visualization.
-								
-								Hanrahan received a Ph.D. in biophysics from the University of Wisconsin-Madison in 1985.  As a founding employee at Pixar Animation Studios in the 1980s, Hanrahan led the design of the RenderMan Interface Specification and the RenderMan Shading Language. In 1989, he joined the faculty of Princeton University.  In 1995, he moved to Stanford University.  More recently, Hanrahan served as a co-founder and CTO of Tableau Software.  He has received three Academy Awards for Science and Technology, the SIGGRAPH Computer Graphics Achievement Award, the SIGGRAPH Stephen A. Coons Award, and the IEEE Visualization Career Award. He is a member of the National Academy of Engineering and the American Academy of Arts and Sciences.  In 2019, he received the ACM A. M. Turing Award.
-							</p>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>		
+			<div id="speakers_table_container"></div>
+		  </div>
 
 		<h2>Acknowledgements</h2>
 		
@@ -303,5 +103,115 @@
 		  gtag('config', 'G-SSQESWNE32');
 		</script>
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script>
+  const csvBaseUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ7vHVsAqORSc-micw2en8uc8SQffDPwxrWSPTyloE0cMj7vD5gcRlTOAgGFewzcZO8klHevQTnhQN/pub?output=csv&sheet='; // <-- your sheet publish URL prefix
+
+  // List of all known sheet names
+  const sheetNames = [
+//   "2024 Fall",
+    "2025 Spring",
+    // Add more here or fetch programmatically if you're exporting a full index
+  ];
+
+  function parseSheetLabel(name) {
+    const match = name.match(/(\d{4})\s+(Spring|Fall)/);
+    if (!match) return null;
+    return { year: parseInt(match[1]), term: match[2] };
+  }
+
+  function renderSheet(title, data, container) {
+    if (!data || !data.length) return;
+
+    let toggleCounter = 1;
+
+    const parsed = parseSheetLabel(title);
+    const heading = `
+      <h2>${parsed.term} ${parsed.year} Speakers</h2>
+      <p>All talks are at 12 noon Eastern Time.</p>
+    `;
+
+    let html = `
+      ${heading}
+      <div class="container">
+        <table id="speakers_table">
+          <tbody>
+            <tr>
+              <th>Date</th>
+              <th>Speaker</th>
+              <th>Affiliation</th>
+              <th>Title</th>
+              <th>Talk Link</th>
+            </tr>
+    `;
+
+    data.forEach(row => {
+      if (!row.Date) return;
+
+      const id = toggleCounter++;
+      const hasAbstractOrBio = row.Abstract || row["Short Bio"];
+
+      const titleCell = `
+        ${row.Title || ''}
+        ${hasAbstractOrBio ? `
+          <div onclick="toggleDetails(${id})" id="moreDetailsBtn_${id}" class="showBtn">
+            <a id="showDetails_${id}">+ Show details</a>
+            <a id="hideDetails_${id}" style="display:none;">- Hide details</a>
+          </div>` : ''
+      }`;
+
+      html += `
+        <tr>
+          <td>${row.Date}</td>
+          <td>${row.speaker_link ? `<a href="${row.speaker_link}" target="_blank">${row.Speaker}</a>` : row.Speaker || ''}</td>
+          <td>${row.Affiliation || ''}</td>
+          <td>${titleCell}</td>
+          <td>${row["Talk Link"] ? `<a href="${row["Talk Link"]}" target="_blank">${row["Talk Link"].includes("zoom") ? "Zoom" : "Link"}</a>` : ''}</td>
+        </tr>
+      `;
+
+      if (hasAbstractOrBio) {
+        html += `
+          <tr id="rowDetails_${id}" style="display:none;">
+            <td colspan="6">
+              ${row.Title ? `<p style="font-size: 20px;">${row.Title}</p>` : ''}
+              ${row.Abstract ? `<p>${row.Abstract}</p>` : ''}
+              ${row["Short Bio"] ? `<p style="font-size: 20px;">Bio</p><p>${row["Short Bio"]}</p>` : ''}
+            </td>
+          </tr>
+        `;
+      }
+    });
+
+    html += '</tbody></table></div>';
+    container.insertAdjacentHTML('beforeend', html);
+  }
+
+  function toggleDetails(n) {
+    const row = document.getElementById(`rowDetails_${n}`);
+    const show = document.getElementById(`showDetails_${n}`);
+    const hide = document.getElementById(`hideDetails_${n}`);
+    const isHidden = show.style.display !== 'none';
+    row.style.display = isHidden ? 'contents' : 'none';
+    show.style.display = isHidden ? 'none' : 'inline';
+    hide.style.display = isHidden ? 'inline' : 'none';
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('speakers_table_container');
+
+    sheetNames.forEach(sheetName => {
+      const sheetUrl = csvBaseUrl + encodeURIComponent(sheetName);
+      Papa.parse(sheetUrl, {
+        download: true,
+        header: true,
+        complete: results => {
+          renderSheet(sheetName, results.data.filter(r => r.Date), container);
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
